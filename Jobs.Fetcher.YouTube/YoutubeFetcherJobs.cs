@@ -9,7 +9,6 @@ namespace Jobs.Fetcher.YouTube {
 
     public class VideosQuery : YoutubeFetcher {
         public VideosQuery(List<(YouTubeService dataService, YouTubeAnalyticsService analyticsService)> accountInfos): base(accountInfos) {}
-
         public override List<string> Dependencies() {
             return new List<string>() {};
         }
@@ -103,7 +102,6 @@ namespace Jobs.Fetcher.YouTube {
 
     public class StatisticsQuery : YoutubeFetcher {
         public StatisticsQuery(List<(YouTubeService dataService, YouTubeAnalyticsService analyticsService)> accountInfos): base(accountInfos) {}
-
         public override List<string> Dependencies() {
             return new List<string>() {};
         }
